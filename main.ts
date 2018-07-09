@@ -1,3 +1,7 @@
+/**
+ * Represents a rose, also known as a rhodonea curve, which is a sinusoid expressed by the polar
+ * equation `r = cos(k * theta)`.
+ */
 class Rose {
     private readonly context: CanvasRenderingContext2D;
     private readonly centerX: number;
@@ -10,13 +14,12 @@ class Rose {
     private previousY: number = 0;
 
     /**
-     * Represents a rose, also known as a rhodonea curve.
      * @param centerX The x value of the center of the rose.
      * @param centerY The y value of the center of the rose.
      * @param amplitude The length of each petal.
      * @param k The petal coefficient. If `k` is an integer, the curve will be rose-shaped with
      * `2k` petals if `k` is even, and `k` petals if `k` is odd.
-     * @param deltaTheta The amount in radians that the angle is increased every time the rose is
+     * @param deltaTheta The number of radians that the angle is increased every time the rose is
      * rendered.
      */
     public constructor(context: CanvasRenderingContext2D, centerX: number, centerY: number,
