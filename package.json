@@ -1,0 +1,25 @@
+{
+  "name": "roses",
+  "version": "1.0.0",
+  "description": "Mathematical roses (also known as rhodonea curves) drawn using HTML Canvas",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escamilla/roses.git"
+  },
+  "author": "Joshua Escamilla <joshua.escamilla@selu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/escamilla/roses/issues"
+  },
+  "homepage": "https://github.com/escamilla/roses#readme",
+  "devDependencies": {
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3"
+  }
+}
