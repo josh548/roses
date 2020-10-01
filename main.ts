@@ -8,10 +8,10 @@ class Rose {
     private readonly centerY: number;
     private readonly amplitude: number;
     private readonly k: number;
-    private theta: number = 0;
+    private theta = 0;
     private readonly deltaTheta: number;
-    private previousX: number = 0;
-    private previousY: number = 0;
+    private previousX = 0;
+    private previousY = 0;
 
     /**
      * @param centerX The x value of the center of the rose.
@@ -56,13 +56,13 @@ window.onload = (): void => {
     const height: number = canvas.height = window.innerHeight;
 
     const gridSizeInPixels: number = Math.min(width, height);
-    const numberOfRoses: number = 5;
+    const numberOfRoses = 5;
 
     const amplitude: number = (gridSizeInPixels / numberOfRoses) * 0.5 * 0.9;
-    const deltaTheta: number = 0.05;
+    const deltaTheta = 0.05;
     const roses: Rose[] = [];
-    for (let n: number = 1; n <= numberOfRoses; n++) {
-        for (let d: number = 1; d <= numberOfRoses; d++) {
+    for (let n = 1; n <= numberOfRoses; n++) {
+        for (let d = 1; d <= numberOfRoses; d++) {
             const centerX: number = amplitude + (n - 1) * (gridSizeInPixels / numberOfRoses);
             const centerY: number = amplitude + (d - 1) * (gridSizeInPixels / numberOfRoses);
             roses.push(new Rose(context, centerX, centerY, amplitude, n / d, deltaTheta));
